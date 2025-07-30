@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const calendarBtn = document.getElementById('addToCalendar');
     if (calendarBtn) {
         const eventTitle = "Abschlussparty Deutschkurs";
-        const eventLocation = "Goethe-Institut, Caracas";
+        const eventLocation = "Im Institut, In der Stadt";
         const eventStartDate = "20250904T230000Z"; 
         const eventEndDate = "20250905T020000Z";   
         const eventDetails = 'Großes Finale unseres Deutschkurses! Bringt etwas Süßes oder Salziges mit. Wir freuen uns!';
