@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
     const countdownElement = document.getElementById('countdown');
     if (countdownElement) {
-        const partyDate = new Date(2025, 8, 4, 19, 0, 0).getTime();
+        const partyDate = new Date(2025, 8, 4, 19, 0, 0).getTime(); 
 
         const updateCountdown = setInterval(() => {
             const now = new Date().getTime();
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }, 1000);
     }
+
 
     const calendarBtn = document.getElementById('addToCalendar');
     if (calendarBtn) {
@@ -58,9 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     
+
     handleScrollAnimation();
     window.addEventListener('scroll', handleScrollAnimation);
 
+    // --- 4. INTERAKTIVE TIMELINE (MODAL) ---
     const milestones = document.querySelectorAll('.milestone');
     const modal = document.getElementById('milestone-modal');
     const modalTitle = document.getElementById('modal-title');
@@ -86,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+
     const rsvpForm = document.getElementById('rsvp-form');
     const rsvpConfirmation = document.getElementById('rsvp-confirmation');
 
@@ -94,11 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault(); 
             const guestName = document.getElementById('guest-name').value;
             
+
             rsvpForm.classList.add('hidden');
             rsvpConfirmation.textContent = `Vielen Dank, ${guestName}! Wir freuen uns riesig auf dich! 😊`;
             rsvpConfirmation.classList.remove('hidden');
         });
     }
+
 
 
     if (typeof tsParticles !== 'undefined') {
@@ -111,11 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 fpsLimit: 60,
                 particles: {
                     number: {
-                        value: 50, 
+                        value: 50,
                         density: { enable: true, value_area: 800 }
                     },
                     color: {
-                        value: ["#a5c500", "#cccccc"] 
+
+                        value: ["#3b82f6", "#cccccc"] 
                     },
                     shape: { type: "circle" },
                     opacity: {
@@ -127,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     },
                     move: {
                         enable: true,
-                        speed: 1.5, 
+                        speed: 1.5,
                         direction: "top",
                         straight: false,
                         outModes: { default: "out" }
@@ -138,6 +146,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 detectRetina: true,
             }
+        });
+    }
+});
         });
     }
 });
