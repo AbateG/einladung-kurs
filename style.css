@@ -1,9 +1,8 @@
-/* --- GRUNDEINSTELLUNGEN & TYPOGRAFIE --- */
 :root {
-    --primary-color: #a5c500; /* Goethe-Grün */
-    --secondary-color: #333333; /* Dunkles Grau für Text */
+    --primary-color: #a5c500; 
+    --secondary-color: #333333; 
     --card-background: #FFFFFF;
-    --font-family: 'Inter', sans-serif; /* Hauptschriftart */
+    --font-family: 'Inter', sans-serif; 
     --shadow: 0 4px 15px rgba(0,0,0,0.1);
     --border-radius: 12px;
 }
@@ -47,7 +46,6 @@ h3 {
     color: var(--primary-color);
 }
 
-/* --- PARTIKEL-HINTERGRUND --- */
 #tsparticles {
     position: fixed;
     top: 0;
@@ -58,7 +56,6 @@ h3 {
 }
 
 
-/* --- HEADER --- */
 header {
     text-align: center;
     margin-bottom: 4rem;
@@ -69,7 +66,6 @@ header {
     color: #666;
 }
 
-/* --- ANIMATION BEIM SCROLLEN --- */
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
@@ -81,7 +77,6 @@ header {
     transform: translateY(0);
 }
 
-/* --- INTERAKTIVE TIMELINE --- */
 .journey {
     margin-bottom: 4rem;
 }
@@ -117,7 +112,6 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* --- EINLADUNGSBOX --- */
 .invitation-box {
     background: var(--card-background);
     border-radius: var(--border-radius);
@@ -213,7 +207,6 @@ header {
     transform: scale(1.05);
 }
 
-/* --- ZUSAGE-FORMULAR --- */
 .rsvp {
     background: var(--card-background);
     padding: 2.5rem;
@@ -264,7 +257,6 @@ header {
     margin-top: 1rem;
 }
 
-/* --- MODAL (POP-UP) --- */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -312,12 +304,10 @@ header {
     transform: scale(0.9);
 }
 
-/* --- FOOTER --- */
 footer {
     text-align: center;
     margin-top: 4rem;
     padding: 2rem;
-    /* GEÄNDERT: Schriftart zurück zu "Inter" */
     font-family: var(--font-family);
     font-size: 1.3rem; 
     font-weight: 600;
